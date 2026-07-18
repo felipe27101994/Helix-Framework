@@ -1,0 +1,16 @@
+{
+    "name": "fsn/helix-framework",
+    "description": "Framework PHP desenvolvido para estudo de arquitetura de software.",
+    "type": "project",
+    "license": "MIT",
+
+    "require": {
+        "php": "^8.2"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

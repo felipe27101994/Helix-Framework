@@ -1,0 +1,5 @@
+# Dependências
+/vendor/
+
+# Configurações Locais
+.env
