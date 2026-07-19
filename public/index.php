@@ -2,4 +2,8 @@
 
 declare(strict_types=1);
 
-echo "Helix Framework";
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use App\core\Application;
+$app = new Application;
+$app->run();

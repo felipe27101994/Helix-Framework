@@ -3,3 +3,4 @@
 
 # Configurações Locais
 .env
+composer.lock
