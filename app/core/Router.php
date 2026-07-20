@@ -18,8 +18,11 @@ class Router {
 
     public function resolve(): void
     {
+
+        $baseURI = "helix-framework/public/";
+
         $requestMethod = $_SERVER['REQUEST_METHOD'];
-        $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+        $uri = str_replace($baseURI, "", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
         if ( !isset($this->routes[$requestMethod][$uri]) ) {
 
