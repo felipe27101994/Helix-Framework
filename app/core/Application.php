@@ -2,11 +2,20 @@
 
 namespace App\core;
 
+use App\core\Router;
+
 class Application {
 
-    public function run()
+    private Router $router;
+
+    public function __construct()
     {
-        echo 'Helix Framework funcionando.';
+        $this->router = new Router;
+    }
+
+    public function run(): void
+    {
+        $this->router->resolve();
     }
 
 }
