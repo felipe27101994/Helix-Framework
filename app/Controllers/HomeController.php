@@ -4,9 +4,14 @@
 
  class HomeController {
 
-    public function index(): void
+    public function index()
     {
-        echo 'Olá mundo.';
+        return $this->render('home/index');
+    }
+
+    private function render(string $direct, array $data = [])
+    {
+        require_once __DIR__ . "/../Views/{$direct}.php";
     }
 
 

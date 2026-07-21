@@ -1,0 +1,102 @@
+body {
+    background: #080c16;
+    color: #fff;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.badge-helix {
+    background: #0ea5e9;
+    color: #001018;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+.highlight {
+    color: #38bdf8;
+}
+
+.description {
+    color: #94a3b8;
+    font-size: 1.3rem;
+    max-width: 650px;
+}
+
+.btn-primary {
+    background: #38bdf8;
+    border: none;
+    color: #001018;
+    font-weight: bold;
+    padding: 14px 30px;
+    border-radius: 30px;
+}
+
+.btn-outline-light {
+    border-radius: 30px;
+    padding: 14px 30px;
+}
+
+.code-box {
+    background: #020617;
+    border: 1px solid #1e293b;
+    border-radius: 20px;
+    padding: 25px;
+    font-family: Consolas, monospace;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.code-blue {
+    color: #38bdf8;
+}
+
+.code-green {
+    color: #4ade80;
+}
+
+.feature {
+    background: #111827;
+    border: 1px solid #1e293b;
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+}
+
+.feature h5 {
+    color: #38bdf8;
+}
+
+.dna-image {
+    max-width: 420px;
+    width: 100%;
+    animation: float 5s ease-in-out infinite;
+    filter: drop-shadow(0 0 35px rgba(56, 189, 248, .35));
+    margin-left: 70%;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
