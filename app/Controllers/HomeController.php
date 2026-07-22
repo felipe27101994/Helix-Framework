@@ -1,17 +1,14 @@
 <?php
 
- namespace App\Controllers;
+namespace App\Controllers;
 
- class HomeController {
+use App\Core\Controller;
 
-    public function index()
+class HomeController extends Controller {
+
+    public function index(): void
     {
-        return $this->render('home/index');
-    }
-
-    private function render(string $direct, array $data = [])
-    {
-        require_once __DIR__ . "/../Views/{$direct}.php";
+        $this->render('home/index');
     }
 
 
