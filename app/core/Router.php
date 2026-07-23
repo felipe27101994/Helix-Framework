@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Core;
+use App\Core\Request;
 
 class Router {
 
@@ -21,8 +22,11 @@ class Router {
 
         $baseURI = "helix-framework/public/";
 
-        $requestMethod = $_SERVER['REQUEST_METHOD'];
-        $uri = str_replace($baseURI, "", parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+        $request = new Request();
+        $requestMethod = $request->method();
+
+        $uri = parse_url($request->uri(), PHP_URL_PATH);
+        $uri = str_replace($baseURI, "", $uri);
 
         if ( !isset($this->routes[$requestMethod][$uri]) ) {
 
